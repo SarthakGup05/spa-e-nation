@@ -23,27 +23,25 @@ export const Hero = () => {
           // Shift object focus on mobile to keep the subject visible
           className="w-full h-full object-cover object-[75%_center] md:object-center"
         />
-        {/* Soft gradient fade from the left (Removed solid white overlay) */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/70 to-transparent w-full sm:w-3/4 lg:w-2/3"></div>
+        {/* COMPLETELY HIDDEN ON MOBILE: Only shows gradient on sm screens and up */}
+        <div className="absolute inset-0 hidden sm:block sm:bg-gradient-to-r sm:from-white/95 sm:via-white/70 sm:to-transparent sm:w-3/4 lg:w-2/3"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-20 sm:py-0">
         {/* Constrain text width on the left */}
         <div className="max-w-md sm:max-w-lg lg:max-w-xl text-center sm:text-left mt-0 sm:mt-6 animate-fade-in-up mx-auto sm:mx-0">
-          
           <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full bg-pink-50 border border-pink-200 text-[#EE8297] text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase mb-4 sm:mb-6 shadow-sm">
-            
             WELCOME TO SANCTUARY
           </div>
 
-          {/* Heading - Adjusted for smaller viewports */}
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-7xl font-normal text-gray-900 leading-[1.1] sm:leading-[1.08] mb-4">
+          {/* Heading - Added drop-shadow on mobile for readability without the overlay */}
+          <h1 className="font-serif text-4xl sm:text-5xl lg:text-7xl font-normal text-gray-900 leading-[1.1] sm:leading-[1.08] mb-4 drop-shadow-md sm:drop-shadow-none">
             Spa <span className="italic font-light text-[#EE8297]">e</span>{" "}
             Nation
           </h1>
 
           {/* Golden Lotus Divider */}
-          <div className="flex items-center justify-center sm:justify-start gap-2 mb-4 sm:mb-6">
+          <div className="flex items-center justify-center sm:justify-start gap-2 mb-4 sm:mb-6 drop-shadow-md sm:drop-shadow-none">
             <LotusIcon
               className="w-5 h-5 sm:w-6 sm:h-6 hover:rotate-12 transition-transform duration-300"
               color="#D4AF37"
@@ -51,7 +49,7 @@ export const Hero = () => {
             <div className="h-[1px] w-12 sm:w-16 bg-gradient-to-r from-[#D4AF37] to-transparent" />
           </div>
 
-          <p className="text-gray-900 sm:text-gray-700 text-sm sm:text-base lg:text-lg font-medium sm:font-light leading-relaxed mb-8 max-w-[280px] sm:max-w-md mx-auto sm:mx-0 drop-shadow-sm sm:drop-shadow-none">
+          <p className="text-gray-900 sm:text-gray-700 text-sm sm:text-base lg:text-lg font-medium sm:font-light leading-relaxed mb-8 max-w-[280px] sm:max-w-md mx-auto sm:mx-0 drop-shadow-md sm:drop-shadow-none">
             Indulge in the art of relaxation and rejuvenation. Designed to
             refresh your body, mind, and spirit.
           </p>

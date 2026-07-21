@@ -86,13 +86,6 @@ export const Testimonials = () => {
           ))}
         </div>
 
-        {/* Pagination Dots */}
-        <div className="flex items-center justify-center gap-2 mt-8">
-          <div className="w-5 h-2 rounded-full bg-[#E7748B] transition-all duration-300"></div>
-          <div className="w-2 h-2 rounded-full bg-pink-200 hover:bg-[#E7748B] transition-colors cursor-pointer"></div>
-          <div className="w-2 h-2 rounded-full bg-pink-200 hover:bg-[#E7748B] transition-colors cursor-pointer"></div>
-        </div>
-
       </div>
     </section>
   );
