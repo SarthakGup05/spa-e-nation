@@ -1,0 +1,81 @@
+import React from 'react';
+
+// Exact Lotus Emblem from Design.jpeg
+export const LotusIcon = ({ className = "w-6 h-6", color = "#D4AF37" }) => (
+  <svg viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+    {/* Center Petal */}
+    <path d="M50 5 C45 25 40 45 50 65 C60 45 55 25 50 5 Z" fill={color} fillOpacity="0.25" stroke={color} strokeWidth="2.5" strokeLinejoin="round"/>
+    {/* Left Inner Petal */}
+    <path d="M50 65 C35 55 25 35 25 22 C38 25 46 42 50 65 Z" fill={color} fillOpacity="0.2" stroke={color} strokeWidth="2" strokeLinejoin="round"/>
+    {/* Right Inner Petal */}
+    <path d="M50 65 C65 55 75 35 75 22 C62 25 54 42 50 65 Z" fill={color} fillOpacity="0.2" stroke={color} strokeWidth="2" strokeLinejoin="round"/>
+    {/* Left Outer Petal */}
+    <path d="M50 65 C25 62 10 45 10 32 C28 35 42 50 50 65 Z" stroke={color} strokeWidth="2" fill="none" strokeLinejoin="round"/>
+    {/* Right Outer Petal */}
+    <path d="M50 65 C75 62 90 45 90 32 C72 35 58 50 50 65 Z" stroke={color} strokeWidth="2" fill="none" strokeLinejoin="round"/>
+    {/* Base Stem Curve */}
+    <path d="M30 68 Q 50 78 70 68" stroke={color} strokeWidth="2" fill="none" strokeLinecap="round"/>
+  </svg>
+);
+
+// Exact Section Divider Ornament with Lotus motif beneath titles
+export const SectionDivider = () => (
+  <div className="flex flex-col items-center justify-center gap-1 my-2">
+    <div className="flex items-center gap-3">
+      <div className="h-[1px] w-12 bg-gradient-to-r from-transparent to-[#D4AF37]"></div>
+      <div className="w-1.5 h-1.5 rotate-45 bg-[#D4AF37]"></div>
+      <div className="h-[1px] w-12 bg-gradient-to-l from-transparent to-[#D4AF37]"></div>
+    </div>
+    <LotusIcon className="w-4 h-4 text-[#D4AF37] opacity-80" color="#D4AF37" />
+  </div>
+);
+
+// Custom SVG Icons matching the fine line-art style of Design.jpeg
+export const MassageOilIcon = ({ className = "w-8 h-8", color = "#D4AF37" }) => (
+  <svg viewBox="0 0 48 48" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M20 14h8v-4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v4z"/>
+    <rect x="16" y="14" width="16" height="24" rx="4"/>
+    <path d="M24 22c-3 3-4 5-4 7a4 4 0 0 0 8 0c0-2-1-4-4-7z" fill={color} fillOpacity="0.3"/>
+  </svg>
+);
+
+export const DeepTissueIcon = ({ className = "w-8 h-8", color = "#D4AF37" }) => (
+  <svg viewBox="0 0 48 48" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <ellipse cx="14" cy="20" rx="4" ry="4"/>
+    <path d="M8 36c0-6 4-10 12-10s12 4 12 10"/>
+    <path d="M26 18c4 0 8 2 10 6"/>
+    <circle cx="34" cy="14" r="3"/>
+  </svg>
+);
+
+export const FacialIcon = ({ className = "w-8 h-8", color = "#D4AF37" }) => (
+  <svg viewBox="0 0 48 48" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M24 8a14 14 0 0 0-14 14c0 10 6 18 14 18s14-8 14-18A14 14 0 0 0 24 8z"/>
+    <path d="M18 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+    <path d="M30 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+    <path d="M20 30c2 2 6 2 8 0"/>
+    <path d="M10 16c2-4 6-6 14-6"/>
+  </svg>
+);
+
+export const BodyScrubIcon = ({ className = "w-8 h-8", color = "#D4AF37" }) => (
+  <svg viewBox="0 0 48 48" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M12 20h24l-3 16H15l-3-16z"/>
+    <path d="M10 20c0-4 6-6 14-6s14 2 14 6"/>
+    <circle cx="20" cy="12" r="2" fill={color} fillOpacity="0.4"/>
+    <circle cx="28" cy="10" r="1.5" fill={color} fillOpacity="0.4"/>
+  </svg>
+);
+
+export const SpaPackagesIcon = ({ className = "w-8 h-8", color = "#D4AF37" }) => (
+  <LotusIcon className={className} color={color} />
+);
+
+export const WellnessTherapyIcon = ({ className = "w-8 h-8", color = "#D4AF37" }) => (
+  <svg viewBox="0 0 48 48" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <ellipse cx="24" cy="36" rx="14" ry="4"/>
+    <ellipse cx="24" cy="26" rx="10" ry="3"/>
+    <ellipse cx="24" cy="18" rx="7" ry="2.5"/>
+    <ellipse cx="24" cy="11" rx="4" ry="2" fill={color} fillOpacity="0.4"/>
+  </svg>
+);
