@@ -8,6 +8,7 @@ import { AboutSection } from './components/AboutSection';
 import { LocationSection } from './components/LocationSection';
 import { Testimonials } from './components/Testimonials';
 import { Footer } from './components/Footer';
+import { ContactFloatingButtons } from './components/ContactFloatingButtons';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         <Testimonials />
       </main>
       <Footer />
+      <ContactFloatingButtons />
     </div>
   );
 }

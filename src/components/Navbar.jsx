@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShoppingBag, Menu, X, MapPin, Clock } from 'lucide-react';
+import { Phone, Menu, X, MapPin, Clock } from 'lucide-react';
 // Assuming LotusIcon is correctly imported from your local files
 import { LotusIcon } from './common/Icons';
 
@@ -54,7 +54,7 @@ export const Navbar = () => {
                 SPA E NATION
               </span>
               <span className="text-[8px] sm:text-[8.5px] tracking-[0.25em] text-spa-gold uppercase mt-1 font-medium">
-                RELAX • REJUVENATE • RENEW
+                PAUSE • RESTORE • REVIVE
               </span>
             </div>
           </a>
@@ -76,14 +76,14 @@ export const Navbar = () => {
             ))}
           </nav>
 
-          {/* CTA Book Button */}
+          {/* CTA Call Button */}
           <div className="hidden sm:flex items-center">
             <a
-              href="#book"
+              href="tel:+919997372360"
               className="inline-flex items-center gap-2 bg-spa-rose hover:bg-[#E7748B] text-white px-6 py-2 rounded-full text-xs sm:text-sm font-medium transition-all duration-300 shadow-sm hover:shadow-lg hover:scale-105"
             >
-              Book Now
-              <ShoppingBag className="w-3.5 h-3.5" />
+              Call Now
+              <Phone className="w-3.5 h-3.5 fill-white" />
             </a>
           </div>
 
@@ -119,12 +119,12 @@ export const Navbar = () => {
           ))}
           <div className="pt-3 px-2">
             <a
-              href="#book"
+              href="tel:+919997372360"
               onClick={() => setMobileMenuOpen(false)}
               className="flex items-center justify-center gap-2 w-full bg-spa-rose text-white px-6 py-3 rounded-full text-sm font-medium shadow-md"
             >
-              Book Now
-              <ShoppingBag className="w-4 h-4" />
+              Call Now
+              <Phone className="w-4 h-4 fill-white" />
             </a>
           </div>
         </div>

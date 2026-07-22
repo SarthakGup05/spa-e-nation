@@ -20,7 +20,7 @@ export const Footer = () => {
                   SPA E NATION
                 </span>
                 <span className="text-[8px] tracking-[0.25em] text-spa-gold uppercase -mt-1 font-medium">
-                  RELAX • REJUVENATE • RENEW
+                  PAUSE • RESTORE • REVIVE
                 </span>
               </div>
             </div>
@@ -54,13 +54,18 @@ export const Footer = () => {
           <div>
             <h4 className="font-display text-base font-semibold text-spa-text mb-4">Contact Us</h4>
             <ul className="space-y-3.5 text-xs sm:text-sm text-spa-muted font-light">
-              <li className="flex items-center gap-2.5">
-                <Phone className="w-3.5 h-3.5 text-spa-rose shrink-0" />
-                <span className="text-spa-text font-medium">+91 98765 43210</span>
+              <li className="flex flex-col gap-1">
+                <div className="flex items-center gap-2.5">
+                  <Phone className="w-3.5 h-3.5 text-spa-rose shrink-0" />
+                  <span className="text-spa-text font-medium">+91 99973 72360</span>
+                </div>
+                <div className="flex items-center gap-2.5 pl-6">
+                  <span className="text-spa-muted/80 text-xs">PH: 0562-4628546</span>
+                </div>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-3.5 h-3.5 text-spa-rose shrink-0" />
-                <span>info@spaenation.com</span>
+                <a href="mailto:spaenation@gmail.com" className="hover:text-spa-rose transition-colors">spaenation@gmail.com</a>
               </li>
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-3.5 h-3.5 text-spa-rose shrink-0 mt-0.5" />

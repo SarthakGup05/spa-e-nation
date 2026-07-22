@@ -60,7 +60,7 @@ export const AboutSection = () => {
 
             {/* Button */}
             <a
-              href="#about"
+              href="tel:+919997372360"
               className="inline-flex items-center gap-2.5 bg-spa-rose hover:bg-[#E7748B] text-white h-12 px-8 rounded-full text-xs sm:text-sm font-medium tracking-wide shadow-md hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 group"
             >
               Know More About Us

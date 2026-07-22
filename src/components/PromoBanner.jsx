@@ -44,7 +44,7 @@ export const PromoBanner = () => {
             </p>
 
             <a
-              href="#packages"
+              href="tel:+919997372360"
               className="inline-flex items-center gap-2 bg-white text-spa-rose-dark hover:bg-pink-50 px-7 py-3 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 group/btn"
             >
               View Packages

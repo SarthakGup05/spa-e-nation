@@ -58,7 +58,7 @@ export const Hero = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-3 sm:gap-4 w-full sm:w-auto px-4 sm:px-0">
             <a
-              href="#book"
+              href="tel:+919997372360"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-spa-rose hover:bg-[#E7748B] text-white px-8 py-3.5 rounded-full text-sm font-medium transition-all duration-300 shadow-md hover:shadow-xl hover:scale-105 active:scale-95 group"
             >
               Book Your Escape
