@@ -79,3 +79,35 @@ export const WellnessTherapyIcon = ({ className = "w-8 h-8", color = "#D4AF37" }
     <ellipse cx="24" cy="11" rx="4" ry="2" fill={color} fillOpacity="0.4"/>
   </svg>
 );
+
+// Elegant line-art vector icon of Taj Mahal representing Agra heritage
+export const TajMahalIcon = ({ className = "w-6 h-6", color = "#D4AF37" }) => (
+  <svg viewBox="0 0 100 100" fill="none" stroke={color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    {/* Main Dome */}
+    <path d="M50 22 C42 22 40 31 40 38 C40 44 43 47 50 47 C57 47 60 44 60 38 C60 31 58 22 50 22 Z" fill={color} fillOpacity="0.12" />
+    {/* Dome Finial */}
+    <path d="M50 22 V14 M48 16 H52" />
+    {/* Main Structure Base */}
+    <path d="M26 47 H74 V76 H26 Z" fill={color} fillOpacity="0.06" />
+    {/* Arch Portal (Pishtaq) */}
+    <path d="M43 76 V58 C43 53 46 50 50 50 C54 50 57 53 57 58 V76" strokeWidth="2" />
+    {/* Left side niches */}
+    <path d="M31 63 V54 C31 52 32 51 34 51 C36 51 37 52 37 54 V63" />
+    <path d="M31 73 V67 C31 65 32 64 34 64 C36 64 37 65 37 67 V73" />
+    {/* Right side niches */}
+    <path d="M63 63 V54 C63 52 64 51 66 51 C68 51 69 52 69 54 V63" />
+    <path d="M63 73 V67 C63 65 64 64 66 64 C68 64 69 65 69 67 V73" />
+    {/* Left Small Domes */}
+    <path d="M31 47 C30 42 27 42 27 47 Z" />
+    <path d="M35 47 C34 42 31 42 31 47 Z" />
+    {/* Right Small Domes */}
+    <path d="M65 47 C66 42 69 42 69 47 Z" />
+    <path d="M69 47 C70 42 73 42 73 47 Z" />
+    {/* Left Minaret */}
+    <path d="M14 76 V35 M11 35 H17 M14 35 V29 M11 29 C11 26 17 26 17 29 V35" />
+    {/* Right Minaret */}
+    <path d="M86 76 V35 M83 35 H89 M86 35 V29 M83 29 C83 26 89 26 89 29 V35" />
+    {/* Plinth */}
+    <path d="M6 76 H94 V81 H6 Z" fill={color} fillOpacity="0.2" />
+  </svg>
+);

@@ -6,12 +6,16 @@
   --font-cursive: "Great Vibes", cursive, sans-serif;
   --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
 
-  --color-spa-rose: #E7748B;
-  --color-spa-rose-light: #FDF2F4;
+  --color-spa-rose: #EE8297;
+  --color-spa-rose-light: #2D2030;
   --color-spa-rose-dark: #C9536B;
   --color-spa-gold: #D4AF37;
-  --color-spa-bg: #FFF9FA;
-  --color-spa-dark: #2C222E;
+  --color-spa-bg: #150E18;      /* Deep Velvet Plum */
+  --color-spa-card: #201724;    /* Luxury Card Plum */
+  --color-spa-border: #2F2134;  /* Deep Plum Border */
+  --color-spa-text: #F7EEF0;    /* Warm Rose-White Text */
+  --color-spa-muted: #B5A9B8;   /* Muted Lavender-Gray */
+  --color-spa-dark: #0D0810;    /* Darkest background accent */
 }
 
 html {
@@ -24,7 +28,7 @@ html {
 body {
   font-family: var(--font-sans);
   background-color: var(--color-spa-bg);
-  color: var(--color-spa-dark);
+  color: var(--color-spa-text);
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -34,8 +38,9 @@ body {
 }
 
 h1, h2, h3, h4, .font-serif-luxury {
-  font-family: var(--font-serif);
-  letter-spacing: -0.01em;
+  font-family: var(--font-display);
+  letter-spacing: 0.03em;
+  font-weight: 400;
 }
 
 .font-display {
@@ -44,6 +49,12 @@ h1, h2, h3, h4, .font-serif-luxury {
 
 .font-cursive {
   font-family: var(--font-cursive);
+}
+
+/* Custom Mughal Jali Texture */
+.bg-jali-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23D4AF37' stroke-opacity='0.05' stroke-width='0.8'%3E%3Cpath d='M30 0 L60 30 L30 60 L0 30 Z'/%3E%3Cpath d='M30 6 L54 30 L30 54 L6 30 Z'/%3E%3Ccircle cx='30' cy='30' r='5'/%3E%3Cpath d='M0 0 L60 60 M60 0 L0 80'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
 }
 
 /* Luxury Text Gradient Utilities */
@@ -140,10 +151,10 @@ h1, h2, h3, h4, .font-serif-luxury {
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(32, 23, 36, 0.8);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(253, 226, 233, 0.8);
+  border: 1px solid rgba(238, 130, 151, 0.15);
 }
 
 /* Custom Scrollbar */
@@ -151,7 +162,7 @@ h1, h2, h3, h4, .font-serif-luxury {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #FFF5F7;
+  background: #150E18;
 }
 ::-webkit-scrollbar-thumb {
   background: #EE8297;
