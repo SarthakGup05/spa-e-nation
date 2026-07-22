@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { ScrollBadge } from './components/ScrollBadge';
 import { Services } from './components/Services';
 import { PromoBanner } from './components/PromoBanner';
 import { AboutSection } from './components/AboutSection';
@@ -10,10 +11,11 @@ import { Footer } from './components/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#FFF9FA] text-gray-800 antialiased selection:bg-pink-100 selection:text-[#E7748B]">
+    <div className="min-h-screen bg-spa-bg text-spa-text antialiased selection:bg-spa-rose/20 selection:text-spa-rose">
       <Navbar />
       <main>
         <Hero />
+        <ScrollBadge />
         <Services />
         <PromoBanner />
         <AboutSection />

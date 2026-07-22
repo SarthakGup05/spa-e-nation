@@ -28,22 +28,22 @@ export const Testimonials = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-14 bg-gradient-to-b from-[#FFF5F7] via-[#FDF2F4] to-[#FFF5F7] relative overflow-hidden">
+    <section id="testimonials" className="py-16 bg-spa-bg bg-jali-pattern relative overflow-hidden">
       
-      {/* Background Petal Soft Ornaments with Float */}
-      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-40 h-40 opacity-15 pointer-events-none animate-float-slow">
+      {/* Background Petal Soft Ornaments with Float - lowered opacity for dark mode */}
+      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-40 h-40 opacity-5 pointer-events-none animate-float-slow">
         <img src="/svg/flower.png" alt="Flower Background" className="w-full h-full object-contain" />
       </div>
-      <div className="absolute top-1/3 right-0 w-48 h-48 opacity-15 pointer-events-none animate-float" style={{ animationDelay: '2s' }}>
+      <div className="absolute top-1/3 right-0 w-48 h-48 opacity-5 pointer-events-none animate-float" style={{ animationDelay: '2s' }}>
         <img src="/svg/flower.png" alt="Flower Background" className="w-full h-full object-contain rotate-45" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-xl mx-auto mb-10">
-          <p className="text-xs uppercase tracking-[0.25em] text-[#E7748B] font-semibold mb-1.5">HAPPY CLIENTS</p>
-          <h2 className="font-serif text-3xl sm:text-4xl font-normal text-gray-900 mb-2">
+        <div className="text-center max-w-xl mx-auto mb-12">
+          <p className="text-xs uppercase tracking-[0.25em] text-spa-rose font-semibold mb-2">HAPPY CLIENTS</p>
+          <h2 className="font-display text-3xl sm:text-4xl font-normal text-spa-text mb-3">
             What Our Clients Say
           </h2>
           <SectionDivider />
@@ -55,26 +55,26 @@ export const Testimonials = () => {
             <div
               key={review.id}
               style={{ transitionDelay: `${idx * 100}ms` }}
-              className="group bg-white/90 backdrop-blur-md p-6 rounded-[2rem] border border-pink-100/90 hover:border-[#EE8297]/40 shadow-xs hover:shadow-xl transition-all duration-500 hover:-translate-y-1.5 relative flex flex-col justify-between"
+              className="group bg-spa-card/90 backdrop-blur-md p-6 rounded-[2rem] border border-spa-border hover:border-spa-rose/30 shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1.5 relative flex flex-col justify-between"
             >
               {/* Quote Mark */}
-              <div className="text-[#EE8297] opacity-60 group-hover:opacity-100 text-4xl font-serif leading-none mb-1 group-hover:scale-110 transition-transform duration-300 origin-left">
+              <div className="text-spa-rose opacity-60 group-hover:opacity-100 text-4xl font-display leading-none mb-1 group-hover:scale-110 transition-transform duration-300 origin-left">
                 “
               </div>
               
               <div className="mb-5">
-                <p className="text-gray-600 text-xs sm:text-sm leading-relaxed font-light group-hover:text-gray-900 transition-colors">
+                <p className="text-spa-muted text-xs sm:text-sm leading-relaxed font-light group-hover:text-spa-text transition-colors">
                   {review.comment}
                 </p>
               </div>
 
-              <div className="flex items-center gap-3 pt-3.5 border-t border-pink-100/60">
+              <div className="flex items-center gap-3 pt-3.5 border-t border-spa-border/70">
                 {/* Initial Badge */}
-                <div className="w-10 h-10 rounded-full bg-[#FFF0F4] border-2 border-pink-200 text-[#EE8297] group-hover:bg-[#EE8297] group-hover:border-[#EE8297] group-hover:text-white flex items-center justify-center font-serif text-xs font-semibold shadow-xs transition-all duration-300 shrink-0">
+                <div className="w-10 h-10 rounded-full bg-spa-bg border-2 border-spa-border text-spa-rose group-hover:bg-spa-rose group-hover:border-spa-rose group-hover:text-white flex items-center justify-center font-display text-xs font-semibold shadow-sm transition-all duration-300 shrink-0">
                   {review.initials}
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 text-xs sm:text-sm group-hover:text-[#EE8297] transition-colors">{review.name}</h4>
+                  <h4 className="font-semibold text-spa-text text-xs sm:text-sm group-hover:text-spa-rose transition-colors">{review.name}</h4>
                   <div className="flex items-center gap-0.5 text-amber-400 mt-0.5">
                     {[...Array(review.rating)].map((_, i) => (
                       <Star key={i} className="w-3 h-3 fill-current" />
