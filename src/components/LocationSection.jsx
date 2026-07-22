@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MapPin, Navigation, Copy, Check, Clock, Building2, Compass, ExternalLink } from 'lucide-react';
+import { MapPin, Navigation, Copy, Check, Clock, Building2, Compass } from 'lucide-react';
 import { LotusIcon, TajMahalIcon } from './common/Icons';
 
 export const LocationSection = () => {
@@ -14,10 +14,8 @@ export const LocationSection = () => {
 
   const fullAddressString = "2nd floor, T.S. SEHRA TOWER BANSAL NAGAR, FATEHABAD ROAD TAJGANJ, AGRA-282001";
   
-  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Spa E Nation 2nd floor T.S. SEHRA TOWER BANSAL NAGAR FATEHABAD ROAD TAJGANJ AGRA 282001")}`;
+  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("T.S. Sehra Tower, Bansal Nagar, Fatehabad Road, Tajganj, Agra, Uttar Pradesh 282001")}`;
   
-  const mapEmbedUrl = `https://maps.google.com/maps?q=${encodeURIComponent("2nd floor, T.S. SEHRA TOWER BANSAL NAGAR, FATEHABAD ROAD TAJGANJ, AGRA-282001")}&t=&z=16&ie=UTF8&iwloc=&output=embed`;
-
   const handleCopyAddress = () => {
     navigator.clipboard.writeText(fullAddressString);
     setCopied(true);
@@ -50,11 +48,11 @@ export const LocationSection = () => {
           </p>
         </div>
 
-        {/* Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+        {/* Content Container */}
+        <div className="max-w-2xl mx-auto">
           
           {/* Address Details Card */}
-          <div className="lg:col-span-5 bg-spa-card/90 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-spa-border shadow-lg hover:shadow-xl transition-all duration-500 flex flex-col justify-between relative overflow-hidden group">
+          <div className="bg-spa-card/90 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-spa-border shadow-lg hover:shadow-xl transition-all duration-500 flex flex-col justify-between relative overflow-hidden group">
             
             {/* Top decorative Lotus watermark */}
             <div className="absolute -right-6 -bottom-6 opacity-[0.03] pointer-events-none transition-transform duration-700 group-hover:scale-110 group-hover:rotate-6">
@@ -142,36 +140,6 @@ export const LocationSection = () => {
               </button>
             </div>
 
-          </div>
-
-          {/* Interactive Map Embed Card */}
-          <div className="lg:col-span-7 bg-spa-card rounded-3xl border border-spa-border shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden min-h-[340px] sm:min-h-[400px] flex flex-col relative group">
-            <div className="bg-spa-dark/70 px-5 py-3 border-b border-spa-border flex items-center justify-between">
-              <div className="flex items-center gap-2 text-xs font-semibold text-spa-text">
-                <MapPin className="w-3.5 h-3.5 text-spa-rose animate-bounce" />
-                Interactive Location Map • Tajganj, Agra
-              </div>
-              <a 
-                href={googleMapsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs text-spa-rose hover:text-[#E7748B] font-medium underline flex items-center gap-1"
-              >
-                <span>View Larger Map</span>
-                <ExternalLink className="w-3.5 h-3.5" />
-              </a>
-            </div>
-
-            <div className="flex-1 w-full h-full min-h-[280px] relative bg-spa-dark/40">
-              <iframe
-                title="Spa e Nation Location Map"
-                src={mapEmbedUrl}
-                className="w-full h-full border-0 absolute inset-0 filter invert opacity-90 contrast-125"
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
           </div>
 
         </div>
